@@ -8,12 +8,12 @@ const Home = () => {
   return (
     <div name="home" className=' bg-gradient-to-b from-black via-black to-gray-800'>
 
-        <div className='max-w-6xl py-36 mx-auto justify-around flex items-center  main-responsive '>
+        <div className='max-w-6xl px-10 md:px-0 py-36 mx-auto justify-around flex items-center  main-responsive '>
             <div className='flex flex-col justify-center h-4 '>
 
                 <h2 className='text-4xl sm:text-5xl font-bold text-white     '>
                     I'm a Jatin Panesiya <br />
-                    <p className='text-3xl'>  Front-end Web Developer </p>     
+                    <p className='text-2xl sm:text-3xl'>  Front-end Web Developer </p>     
                 </h2>
 
                 <p className='text-gray-500 py-4 max-w-md flex justify-center'>
@@ -28,7 +28,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='px-10'>
+            <div className=''>
                 <img src={heroImage} alt="my profile" className='rounded-xl img-responsive'/>
             </div>
         </div>

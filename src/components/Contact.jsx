@@ -33,12 +33,12 @@ const Contact = () => {
             <div className='flex flex-col p-4 justify-center max-w-6xl mx-auto'>
                 <div className='pb-8'>
                     <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Contact</p>
-                    <p className='uppercase py-6 text-xl'>Submit the form below to get in touch with me</p>
+                    <p className='py-6 text-xl'>Submit the form below to get in touch with me</p>
                 </div>
 
                 <div className='flex justify-center items-center'>
                     <form ref={form} onSubmit={sendEmail} className='flex flex-col w-full md:w-1/2'>
-                       <h1 className='text-center pb-10 text-3xl uppercase'>Reach Out and Say Hello</h1>
+                       
                         <input value={name} onChange={(e) => setName(e.target.value)} name="from_name" className='p-2 bg-transparent border-2 rounded-md text-white focus:outline-none' type="text" placeholder='Enter your name' />
                         <input value={email} onChange={(e) => setEmail(e.target.value)} name="from_email" className='p-2 bg-transparent border-2 rounded-md text-white focus:outline-none my-4' type="text" placeholder='Enter your email' />
                         <textarea value={message} onChange={(e) => setMessage(e.target.value)} name="message" className='p-2 bg-transparent border-2 rounded-md focus:outline-none text-white' rows="10" placeholder='Enter your message'></textarea>
