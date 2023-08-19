@@ -4,7 +4,7 @@ const Footer = ()=>{
     return(
         <div className="w-full bg-gradient-to-b from-gray-800 via-gray-800 to-black">
             <hr />
-            <div className="max-w-6xl mx-auto  py-10 px-20 grid grid-col-1 gap-10 sm:gap-0 md:gap-0 sm:grid-cols-2 lg:grid-cols-3 text-white">
+            <div className="max-w-6xl mx-auto  py-10 px-20 grid grid-col-1 gap-10 sm:gap-3  sm:grid-cols-2 lg:grid-cols-3 text-white">
                 <div className='grid gap-2'>
                     <h1 className='font-bold text-2xl pb-5 '>Pages</h1>
                     <Link to="home" smooth duration={500} className="hover:underline cursor-pointer text-slate-300 text-lg">Home</Link>

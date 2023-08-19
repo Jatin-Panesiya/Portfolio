@@ -13,14 +13,14 @@ const Home = () => {
         <div className='max-w-6xl px-10 md:px-0 py-36 mx-auto justify-around flex items-center  main-responsive '>
             <div className='flex flex-col justify-center h-4 '>
 
-                <h2 className='text-4xl sm:text-5xl font-bold text-white     '>
+                <h2 className='text-4xl sm:text-5xl font-bold text-white res'>
                     I'm a Jatin Panesiya <br />
                     <Typewriter options={{
                         autoStart:true,
                         loop:true,
                         delay:100,
                         strings : ["Web Developer"]
-                    }} className='text-2xl sm:text-3xl pt-2'></Typewriter>     
+                    }} className='text-2xl sm:text-3xl pt-2 res'></Typewriter>     
                 </h2>
 
                 <p className='text-slate-400 py-4 max-w-md flex justify-center'>
