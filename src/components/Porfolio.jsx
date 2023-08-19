@@ -55,8 +55,8 @@ const Porfolio = () => {
             id:6,
             src:project6,
             name:"Personal Portfolio",
-            demo:"https://rutu-portfolio.netlify.app/",
-            code:"https://github.com/Jatin-Panesiya/Html_css_projects/tree/main/Portfolio"
+            demo:"https://multiple-user-login.netlify.app/",
+            code:"https://github.com/Jatin-Panesiya/Javascript_Projects/tree/main/login-logout%20task"
 
         },
     ]
