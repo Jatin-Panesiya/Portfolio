@@ -54,7 +54,7 @@ const Porfolio = () => {
         {
             id:6,
             src:project6,
-            name:"Personal Portfolio",
+            name:"Multiple User Login",
             demo:"https://multiple-user-login.netlify.app/",
             code:"https://github.com/Jatin-Panesiya/Javascript_Projects/tree/main/login-logout%20task"
 
