@@ -6,7 +6,11 @@ import tailwind from '../assets/images/tailwind.webp';
 import react from '../assets/images/react.png';
 import github from '../assets/images/github.png';
 import bootstrap from '../assets/images/bootstrap.png';
-import asp from '../assets/images/aspnet.png';
+import asp from '../assets/images/aspnet.webp';
+import seo from '../assets/images/seo.png';
+import AOS from 'aos'
+import 'aos/dist/aos.css' 
+import { useEffect } from "react";
 
 const Experience = () => {
 
@@ -59,18 +63,28 @@ const Experience = () => {
             title : "Asp.Net",
             style: 'shadow-blue-500'
         },
+        
+        {
+            id:9,
+            src: seo,
+            title : "SEO",
+            style: 'shadow-sky-500'
+        },
     ]
+    useEffect(() => {
+        AOS.init({ duration: 3000 });
+      }, []);
 
   return (
     <div name="experience" className="bg-gradient-to-b from-gray-800 to-black w-full pt-36">
-      <div className="max-w-6xl mx-auto p-4 flex flex-col justify-center w-full text-white">
+      <div data-aos="fade-up"  className="max-w-6xl mx-auto p-4 flex flex-col justify-center w-full text-white">
 
         <div>
             <p className='text-4xl font-bold border-b-4 border-gray-500 p-2 inline'>Experience</p>
             <p className='py-6 text-lg uppercase text-center'>This are the technology I've worked with</p>
         </div>
 
-        <div className='w-full grid grid-cols-1 sm:grid-cols-3 gap-8 text-center py-8 px-4 sm:px-0'>
+        <div  data-aos="fade-up"  className='w-full grid grid-cols-1 sm:grid-cols-3 gap-8 text-center py-8 px-4 sm:px-0'>
             {
                 techs.map(({id,src,title,style})=>{
                     return(

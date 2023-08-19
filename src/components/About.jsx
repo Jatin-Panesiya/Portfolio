@@ -1,11 +1,19 @@
 import React from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css' 
+import { useEffect } from "react";
 
 const About = () => {
-  return (
-    <div name="about" className='w-full  bg-gradient-to-b from-gray-800 pt-36 to-black text-white'>
 
-    <div className='max-w-6xl h-full p-4 mx-auto flex flex-col justify-center w-full '>
-        <div className='pb-8 '>
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
+
+  return (
+    <div  name="about" className='w-full  bg-gradient-to-b from-gray-800 pt-36 to-black text-white'>
+
+    <div  data-aos="fade-up" className='max-w-6xl h-full p-4 mx-auto flex flex-col justify-center w-full '>
+        <div  className='pb-8 '>
             <p className='text-4xl font-bold inline border-b-4 border-gray-500 '>About</p>
         </div>
         <p className='text-xl mt-10 leading-10'>I'm Jatin Panesiya, a passionate front-end web developer hailing from Gujarat. Proficient in HTML, CSS, JavaScript, React, Tailwind CSS, and more.. I create captivating digital experiences. My journey began with a fascination for crafting user-friendly interfaces that led me to specialize in React's dynamic capabilities and design aesthetics. With a commitment to continuous learning and collaboration, I leverage tools like GitHub for seamless version control and efficient teamwork. Let's connect and turn your ideas into engaging web realities.</p>

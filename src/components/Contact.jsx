@@ -1,5 +1,8 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import AOS from 'aos'
+import 'aos/dist/aos.css' 
+import { useEffect } from "react";
 
 const Contact = () => {
     const form = useRef();
@@ -26,11 +29,14 @@ const Contact = () => {
             alert("please enter name and email")
         }
     };
+    useEffect(() => {
+        AOS.init({ duration: 3000 });
+      }, []);
 
     return (
 
         <div name="contact" className='w-full bg-gradient-to-b from-black to-gray-800 p-4 text-white pt-28'>
-            <div className='flex flex-col p-4 justify-center max-w-6xl mx-auto'>
+            <div data-aos="fade-up" className='flex flex-col p-4 justify-center max-w-6xl mx-auto'>
                 <div className='pb-8'>
                     <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Contact</p>
                     <p className='py-6 text-xl'>Submit the form below to get in touch with me</p>

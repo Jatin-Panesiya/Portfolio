@@ -5,6 +5,9 @@ import project3 from "../assets/images/project-3.png";
 import project4 from "../assets/images/project-4.png";
 import project5 from "../assets/images/project-5.png";
 import project6 from "../assets/images/project-6.png";
+import AOS from 'aos'
+import 'aos/dist/aos.css' 
+import { useEffect } from "react";
 
 const Porfolio = () => {
 
@@ -58,6 +61,10 @@ const Porfolio = () => {
         },
     ]
 
+    useEffect(() => {
+      AOS.init({ duration: 3000 });
+    }, []);
+     
   return (
     <div
       name="portfolio"
@@ -69,7 +76,7 @@ const Porfolio = () => {
           <p className="py-6 text-lg uppercase text-center">Check out some of my work here</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 ">
+        <div  data-aos="fade-up"  className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 " >
         {
             portfolios.map(({id,src,name,demo,code})=>{
                 return(
